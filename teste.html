@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <svg viewBox="0 0 600 400">
+      <!-- Eixo X -->
+      <line x1="50" y1="350" x2="550" y2="350" stroke="black" />
+      <!-- Eixo Y -->
+      <line x1="50" y1="50" x2="50" y2="350" stroke="black" />
+      <!-- Rótulos do eixo X -->
+      <text x="50" y="380" font-family="Verdana" font-size="12">1970</text>
+      <text x="150" y="380" font-family="Verdana" font-size="12">1980</text>
+      <text x="250" y="380" font-family="Verdana" font-size="12">1991</text>
+      <text x="350" y="380" font-family="Verdana" font-size="12">2000</text>
+      <text x="450" y="380" font-family="Verdana" font-size="12">2010</text>
+      <text x="550" y="380" font-family="Verdana" font-size="12">2021</text>
+      <!-- Rótulos do eixo Y -->
+      <text x="10" y="60" font-family="Verdana" font-size="12">0</text>
+      <text x="10" y="160" font-family="Verdana" font-size="12">100,000</text>
+      <text x="10" y="260" font-family="Verdana" font-size="12">200,000</text>
+      <text x="10" y="360" font-family="Verdana" font-size="12">300,000</text>
+      <!-- Dados de Petrolina -->
+      <polyline points="50,350 150,300 250,180 350,130 450,50 550,10" fill="none" stroke="blue" stroke-width="2" />
+      <!-- Dados de Juazeiro -->
+      <polyline points="50,350 150,280 250,240 350,160 450,140 550,120" fill="none" stroke="green" stroke-width="2" />
+      <!-- Legenda -->
+      <rect x="50" y="400" width="20" height="10" fill="blue" />
+      <text x="80" y="410" font-family="Verdana" font-size="12">Petrolina</text>
+      <rect x="160" y="400" width="20" height="10" fill="green" />
+      <text x="190" y="410" font-family="Verdana" font-size="12">Juazeiro</text>
+    </svg>
+  </body>
+</html>
