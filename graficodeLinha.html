@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>População Petrolina x Juazeiro</title>
+  <style>
+svg {
+    border: 1px solid rgb(152, 60, 149);
+      width: 1000px;
+      height: 600px;
+    }
+    .legenda {
+      display: flex;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+    }
+
+    .quadrado-azul {
+      width: 15px;
+      height: 15px;
+      background-color: blue;
+      margin-right: 5px;
+    }
+
+    .quadrado-verde {
+      width: 15px;
+      height: 15px;
+      background-color: green;
+      margin-right: 5px;
+    }
+  </style>
+</head>
+<body>
+    <h1>Gráfico de Linha SVG</h1>
+    <h3>Autores:
+        <br>
+        Mateus de Almeida Ribeiro
+        <br>
+        Paulo Henrique de Farias Martins
+        
+    </h3>
+    <svg viewBox="0 0 600 400">
+        <!-- Eixo X -->
+        <line x1="50" y1="350" x2="600" y2="350" stroke="black" />
+        <!-- Eixo Y -->
+        <line x1="50" y1="50" x2="50" y2="350" stroke="black" />
+        <!-- Rótulos do eixo X -->
+        <text x="50" y="380" font-family="Verdana" font-size="10">1970</text>
+        <text x="150" y="380" font-family="Verdana" font-size="10">1980</text>
+        <text x="250" y="380" font-family="Verdana" font-size="10">1991</text>
+        <text x="350" y="380" font-family="Verdana" font-size="10">2000</text>
+        <text x="450" y="380" font-family="Verdana" font-size="10">2010</text>
+        <text x="550" y="380" font-family="Verdana" font-size="10">2021</text>
+        <!-- Rótulos do eixo Y -->
+        <text x="1" y="60" font-family="Verdana" font-size="10">300,000</text>
+        <text x="1" y="160" font-family="Verdana" font-size="10">200,000</text>
+        <text x="1" y="260" font-family="Verdana" font-size="10">100,000</text>
+        <text x="40" y="360" font-family="Verdana" font-size="10">0</text>
+        <!-- Dados de Petrolina -->
+        <polyline points="50,298.748 150,255.703 250,184.594 350,141.462 450,66.038 550,0.628" fill="none" stroke="blue" stroke-width="2" />
+        <!-- Dados de Juazeiro -->
+        <polyline points="50,298.352 150,241.825 250,231.233 350,184.433 450,162.035 550,140.456" fill="none" stroke="green" stroke-width="2" />
+
+        <rect x="50" y="400" width="20" height="10" fill="blue" />
+    <text x="80" y="410" font-family="Verdana" font-size="12">Petrolina</text>
+    <rect x="160" y="400" width="20" height="10" fill="green" />
+    <text x="190" y="410" font-family="Verdana" font-size="12">Juazeiro</text>
+
+      </svg>
+      <div class="legenda">
+        <div class="quadrado-azul"></div>
+        Petrolina
+      </div>
+      <div class="legenda">
+        <div class="quadrado-verde"></div>
+        Juazeiro
+      </div>
+
+</body>
+</html>
